@@ -1,0 +1,526 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: MonumentExtended-Regular;
+  src: url(./assets/fonts/MonumentExtended-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+p {
+  font-size: 24px;
+}
+
+#info .info-content div {
+  width: 220px;
+}
+
+.opacity-medium {
+  opacity: 60%;
+}
+
+.font-monument {
+  font-family: MonumentExtended-Regular;
+  color: white;
+  font-size: 16px;
+}
+
+.menu-links a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  opacity: 60%;
+}
+.menu-links a:hover {
+  opacity: 100%;
+}
+
+#ad-boxes {
+  padding-top: 88px;
+}
+#ad-boxes .ad-box {
+  height: 510px;
+  background-image: url(./img/01\ rock\ photo.png);
+  background-repeat: no-repeat;
+  background-size: 384px;
+  background-position-x: 78%;
+  background-position-y: 10%;
+}
+#ad-boxes .ad-box .left-side .title h1 {
+  font-family: MonumentExtended-Regular;
+  color: white;
+}
+#ad-boxes .ad-box .left-side .desc {
+  width: 64%;
+  color: white;
+}
+#ad-boxes .ad-box .left-side .buy-ticket-button button {
+  width: 25%;
+  height: 54px;
+  font-size: 14px;
+  font-family: MonumentExtended-Regular;
+  color: #FFFF00;
+  background-color: transparent;
+  border: 1px solid #FFFF00;
+}
+#ad-boxes .ad-box .left-side .buy-ticket-button button:hover {
+  background-color: #FFFF00;
+  color: black;
+}
+#ad-boxes .ad-box .left-side .buy-ticket-button i {
+  font-size: 16px;
+  font-stretch: wider;
+  margin-left: 10px;
+}
+#ad-boxes .ad-box .right-side .rock-2 img {
+  width: 72%;
+  float: right;
+  margin-top: 26px;
+}
+#ad-boxes .ad-box .right-side .ellipse img {
+  width: 20%;
+  position: relative;
+  top: 68px;
+  left: 60px;
+  animation-name: ellipse;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+}
+
+@keyframes ellipse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#info .info-content {
+  font-family: MonumentExtended-Regular;
+  color: white;
+}
+#info .info-content span {
+  font-size: 16px;
+}
+
+#about-festival .about-festival-content {
+  padding: 60px 0;
+}
+#about-festival .about-festival-content .left-side {
+  position: relative;
+}
+#about-festival .about-festival-content .left-side .img-01 {
+  width: 70%;
+}
+#about-festival .about-festival-content .left-side .img-02 {
+  position: absolute;
+  bottom: -100px;
+  left: 200px;
+}
+#about-festival .about-festival-content .right-side .title {
+  font-family: MonumentExtended-Regular;
+  color: white;
+}
+#about-festival .about-festival-content .right-side .desc {
+  color: white;
+}
+
+#animation .anime {
+  padding: 100px 0 44px 0;
+}
+#animation .anime .wrapper {
+  max-width: 100%;
+  overflow: hidden;
+}
+#animation .anime .marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+}
+#animation .anime .marquee p {
+  font-family: MonumentExtended-Regular;
+  color: #FFFF00;
+  display: inline-block;
+  font-size: 24px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-34%, 0, 0);
+  }
+}
+#schedule .schedule-content {
+  color: white;
+}
+#schedule .schedule-content .title {
+  font-family: MonumentExtended-Regular;
+  border-bottom: 1px solid rgb(124, 121, 121);
+  padding-bottom: 32px;
+}
+#schedule .schedule-content .schedule-row {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgb(124, 121, 121);
+}
+#schedule .schedule-content .date {
+  font-size: 28px;
+  font-family: MonumentExtended-Regular;
+}
+#schedule .schedule-content .info {
+  font-size: 20px;
+}
+
+#tickets .tickets-content {
+  margin-top: 40px;
+  color: white;
+}
+#tickets .tickets-content .title {
+  font-family: MonumentExtended-Regular;
+}
+#tickets .tickets-content .desc {
+  font-size: 12px;
+}
+#tickets .tickets-content [class*=col-] {
+  column-gap: 24px;
+}
+#tickets .tickets-content .ticket-card {
+  text-align: center;
+  border: 1px solid white;
+}
+#tickets .tickets-content .ticket-card .ticket-card-title {
+  padding: 44px 0 20px 0;
+  font-family: MonumentExtended-Regular;
+}
+#tickets .tickets-content .ticket-card p {
+  font-size: 16px;
+  color: rgb(185, 181, 181);
+}
+#tickets .tickets-content .ticket-card ul {
+  margin-left: -20px;
+  font-size: 16px;
+  list-style-type: none;
+  color: rgb(185, 181, 181);
+  line-height: 30px;
+  margin-bottom: -28px;
+}
+#tickets .tickets-content .ticket-card .ticket-card-price {
+  font-family: MonumentExtended-Regular;
+  margin-top: 100px;
+}
+#tickets .tickets-content .ticket-card .ticket-card-button button {
+  font-family: MonumentExtended-Regular;
+  width: 180px;
+  height: 60px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  margin: 40px 0;
+  letter-spacing: 2px;
+}
+#tickets .tickets-content .ticket-card:hover {
+  border: 1px solid #FFFF00;
+}
+#tickets .tickets-content .ticket-card:hover .ticket-card-price {
+  color: #FFFF00;
+}
+#tickets .tickets-content .ticket-card:hover button {
+  color: #FFFF00;
+  border: 1px solid #FFFF00;
+}
+
+#featured-musicians {
+  color: white;
+  margin-top: 60px;
+}
+#featured-musicians .pic {
+  transition: 1s ease;
+}
+#featured-musicians .title {
+  font-family: MonumentExtended-Regular;
+}
+#featured-musicians img {
+  width: 94%;
+}
+#featured-musicians .desc {
+  font-size: 18px;
+  padding: 12px 0;
+  margin-bottom: 60px;
+}
+#featured-musicians .pic-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-family: MonumentExtended-Regular;
+  width: 140px;
+  height: 40px;
+  background-color: #FFFF00;
+  color: black;
+  font-size: 14px;
+  display: none;
+}
+#featured-musicians .pic:hover img {
+  opacity: 40%;
+}
+#featured-musicians .pic:hover .pic-time {
+  display: flex;
+}
+.picture-row {
+  display: flex;
+  justify-content: between;
+}
+#faq .title {
+  font-family: MonumentExtended-Regular;
+  color: white;
+  padding: 40px 0;
+}
+#faq button {
+  background-color: transparent;
+}
+#faq .accordion {
+  font-family: MonumentExtended-Regular;
+  color: rgb(179, 176, 176);
+  padding: 30px 0px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 24px;
+  transition: 0.4s;
+  border-top: 1px solid gray;
+}
+#faq .panel {
+    color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    height: auto;
+  }
+  
+  #faq .active.panel {
+    max-height: 500px; 
+  }
+#faq .active,
+#faq .accordion:hover {
+  color: white;
+}
+#faq .accordion:after {
+  content: "+";
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+#faq .accordion.active:after {
+  content: "−";
+}
+#faq .last-panel {
+  border-bottom: 1px solid gray;
+}
+
+#merch .merch-content {
+  margin-top: 80px;
+  color: white;
+}
+#merch .merch-content .title {
+  font-family: MonumentExtended-Regular;
+}
+#merch .merch-content .desc {
+  font-size: 12px;
+}
+#merch .merch-content .picture img {
+  width: 94%;
+}
+#merch .merch-content .picture .desc {
+  padding: 20px 0;
+  font-size: 18px;
+}
+
+footer .footer-content {
+  color: white;
+  margin-bottom: 16px;
+}
+footer .footer-content ul {
+  list-style-type: none;
+}
+footer .footer-content a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  opacity: 60%;
+}
+footer .footer-content a:hover {
+  opacity: 100%;
+}
+footer .footer-content .logo {
+  font-family: MonumentExtended-Regular;
+  font-size: 16px;
+}
+#sidebar{
+  background-color: black;
+  min-width: 400px;
+  height:fit-content;
+  position: absolute;
+  top:100px;
+}
+.navbar {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  transition: top 0.3s;
+}
+.navbar.scrolled {
+  position: sticky !important;
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    position: sticky !important;
+  }
+  .ticket-cards{
+    flex-direction: column;
+  }
+  .ticket-card{
+    margin-bottom: 16px;
+  }
+  #ad-boxes {
+    padding-top: 20px;
+  }
+  #ad-boxes .ad-box {
+    height: 360px;
+    background-size: 94%;
+    background-position: center;
+  }
+#ad-boxes .rock-2{
+  display: none;
+}
+#ad-boxes .right-side{
+  position: absolute;
+  z-index:10;
+  left:0;
+  width:100%;
+}
+#ad-boxes .ad-box .right-side .ellipse img {
+  width: 100%;
+  position: relative;
+  top: 40px;
+  left: 260px;
+}
+.ad-box .left-side{
+  position: absolute;
+  bottom:120px;
+  left:0;
+  text-align: center;
+}
+
+#ad-boxes{
+  height: 700px;
+}
+
+#ad-boxes .ad-box .left-side .buy-ticket-button button {
+  width: 60%;
+  height: 54px;
+  font-size: 16px;
+}
+#ad-boxes .ad-box .left-side .buy-ticket-button button i{
+  display:none;
+}
+ .info-content{
+  flex-direction: column;
+ }
+ .info-content div{
+  margin-bottom: 32px;
+  width: 100% !important;
+ }
+ #info .info-content .display-5{
+  font-size: 56px;
+  margin:0 !important;
+}
+ #about-festival .img-02{
+  display: none;
+ }
+ #about-festival {
+  position: relative;
+  height: 800px;
+ }
+ #about-festival .img-01,
+ #about-festival .img-01 img{
+  width: 100% !important;
+ }
+ #about-festival .right-side{
+  position: absolute;
+  text-align: center;
+  top:510px;
+ }
+ #about-festival .desc {
+  padding: 8px;
+ }
+ #about-festival .desc p{
+  font-size: 14px;
+ }
+#schedule .schedule-row{
+  flex-direction: column;
+}
+ #schedule .date{
+  font-size: 24px !important;
+ }
+
+ .picture-row {
+  display: none;
+}
+#merch p{
+  font-size: 16px;
+}
+ #merch .merch-content {
+  margin-top: 60px;
+  color: white;
+  margin-bottom: -60px;
+}
+#merch .merch-content .picture img {
+  width: 94%;
+}
+#merch .desc {
+  margin:0 0 12px 4px;
+  font-size: 24px !important;
+  text-align: left;
+}
+
+#faq .accordion {
+  display: flex;
+  align-items: center;
+}
+.footer-content{
+  text-align: center;
+}
+.footer-content ul{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 0;
+}
+.footer-content ul li{
+ font-size: 20px;
+ line-height: 54px;
+ text-align: center;
+}
+.footer-content .logo{
+  font-size: 28px !important;
+  text-align: center;
+ }
+}
+
+@media (min-width: 1024px) {
+  p{
+    font-size: 16px;
+  }
+}
