@@ -50,7 +50,7 @@ p {
 
 #ad-boxes .ad-box {
   height: 510px;
-  background-image: url(./img/01\ rock\ photo.png);
+  background-image: url(../public/img/01\ rock\ photo.png);
   background-repeat: no-repeat;
   background-size: 384px;
   background-position-x: 78%;
