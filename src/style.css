@@ -503,7 +503,7 @@ footer .footer-content .logo {
 
   .ad-box .left-side {
     position: absolute;
-    bottom: 20px;
+    top: 400px;
     left: 0;
     text-align: center;
   }
